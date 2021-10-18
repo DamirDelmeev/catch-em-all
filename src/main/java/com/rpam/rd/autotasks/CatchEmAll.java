@@ -19,7 +19,6 @@ public class CatchEmAll {
         } catch (FileNotFoundException e) {
             throw new IllegalArgumentException("Resource is missing", e);
         } catch (IOException e) {
-            System.out.println("Resource error");
             throw new IllegalArgumentException("Resource error", e);
         }
     }
